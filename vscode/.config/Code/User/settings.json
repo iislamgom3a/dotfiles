@@ -1,0 +1,26 @@
+{
+    "window.zoomLevel": 1,
+    "editor.fontFamily": "CaskaydiaCove Nerd Font",
+    "editor.fontSize": 16,
+    "editor.fontWeight": 300,
+    "workbench.iconTheme": "material-icon-theme",
+    "terminal.integrated.inheritEnv": true,
+    "workbench.activityBar.location": "top",
+    "workbench.navigationControl.enabled": false,
+    "window.commandCenter": false,
+    "security.workspace.trust.enabled": false,
+    "workbench.colorTheme": "GitHub Dark Default",
+    "editor.rulers": [
+        {
+            "column": 100,
+            "color": "#1e2d35"
+        }
+    ],
+    "window.openFilesInNewWindow": "on",
+    "workbench.secondarySideBar.defaultVisibility": "maximizedInWorkspace",
+    "window.newWindowProfile": "Default",
+    "chat.commandCenter.enabled": false,
+    "editor.formatOnSave": true,
+    "extensions.ignoreRecommendations": true,
+    "database-client.autoSync": true
+}

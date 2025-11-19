@@ -1,0 +1,15 @@
+[font]
+size=15
+
+[window]
+opacity=0.5
+blur=true
+
+
+[bell]
+animation = "Ease"
+
+
+[cursor]
+style = {blinking = "On"}
+
