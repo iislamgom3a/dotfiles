@@ -27,5 +27,6 @@ require('lazy').setup({
 	require ('plugins.telescope'),
 	require ('plugins.alpha'),
 	require ('plugins.lualine'),
-	require ('plugins.bufferline')
+	require ('plugins.bufferline'),
+	require ('plugins.vim-tmux-navigator')
 })
