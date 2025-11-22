@@ -1,22 +1,24 @@
 gui:
- # Use the mocha catppuccin theme
- theme:
-   activeBorderColor:
-     - '#89b4fa'
-     - bold
-   inactiveBorderColor:
-     - '#a6adc8'
-   optionsTextColor:
-     - '#89b4fa'
-   selectedLineBgColor:
-     - '#313244'
-   cherryPickedCommitBgColor:
-     - '#45475a'
-   cherryPickedCommitFgColor:
-     - '#89b4fa'
-   unstagedChangesColor:
-     - '#f38ba8'
-   defaultFgColor:
-     - '#cdd6f4'
-   searchingActiveBorderColor:
-     - '#f9e2af'
+  theme:
+    activeBorderColor:
+      - '#58a6ff'             # GitHub Blue
+      - bold
+    inactiveBorderColor:
+      - '#fffff'             # GitHub Border Gray
+    searchingActiveBorderColor:
+      - '#3fb950'             # GitHub Green
+      - bold
+    optionsTextColor:
+      - '#8b949e'             # GitHub Muted Text
+    selectedLineBgColor:
+      - '#21262d'             # GitHub Darker Highlight
+    selectedRangeBgColor:
+      - '#21262d'
+    cherryPickedCommitBgColor:
+      - '#1f6feb'             # GitHub Accent Blue
+    cherryPickedCommitFgColor:
+      - '#f0f6fc'             # White
+    unstagedChangesColor:
+      - '#d29922'             # GitHub Orange
+    defaultFgColor:
+      - '#c9d1d9'             # GitHub Foreground
