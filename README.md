@@ -15,20 +15,12 @@ cd ~/dotfiles
 3. change script persmission
 
 ```sh
-chmox +x ./install_packages.sh
+chmox +x ./install.sh
 ```
 
 4. run the script
 
 ```sh
-./install_packages.sh
+./install.sh
 ```
-
 ---
-
-## Install dotfiles 
-
-- Install neovim dotfiles for examples 
-```sh
-stow nvim  
-```

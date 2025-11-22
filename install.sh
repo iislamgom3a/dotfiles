@@ -2,16 +2,19 @@
 
 echo "--- Updating DNF and installing required packages ---"
 sudo dnf update -y
-sudo dnf copr enable alternateved/eza # add eza repo 
+sudo dnf copr enable alternateved/eza -y 
+sudo dnf copr enable dejan/lazygit -y
+sudo dnf copr enable atim/starship -y 
 sudo dnf install -y \
     zsh \
     neovim \
     git \
-    libXScrnSaver \
-    htop \
     eza \
     fastfetch \
-    curl \
+	lazygit \
+	starship \
+	code \
+	tmux \
 
 # Check if Zsh is the default shell
 if [[ "$SHELL" != "/bin/zsh" ]]; then
@@ -20,4 +23,9 @@ if [[ "$SHELL" != "/bin/zsh" ]]; then
     echo "Please log out and log back in for the shell change to take effect."
 fi
 
-echo "You can now run 'stow zsh', 'stow git', and 'stow nvim' from the dotfiles root directory."
+# Install tmux plugin manager
+source ./tmux/.config/tmux/install_plugin_manager.sh
+
+stow lazygit nvim starship tmux zsh 
+
+echo "Dotfiles Installed... Don't forget to login again..."

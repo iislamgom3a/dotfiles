@@ -58,11 +58,6 @@ symbol = ' '
 [package]
 symbol = '󰏗 '
 
-[aws]
-symbol = ' '
-style = 'yellow'
-format = '[$symbol($profile )(\[$duration\] )]($style)'
-
 [docker_context]
 symbol = ' '
 style = 'fg:#06969A'
@@ -81,18 +76,9 @@ min_time = 500
 style = 'fg:gray'
 format = '[$duration]($style)'
 
-[palettes.nord]
-dark_blue = '#5E81AC'
-blue = '#81A1C1'
-teal = '#88C0D0'
-red = '#BF616A'
-orange = '#D08770'
-green = '#A3BE8C'
-yellow = '#EBCB8B'
-purple = '#B48EAD'
-gray = '#434C5E'
-black = '#2E3440'
-white='#D8DEE9'
+[conda]
+format = '[$symbol$environment](dimmed green) '
+symbol = '🅒 '
 
 [palettes.onedark]
 dark_blue='#61afef'
