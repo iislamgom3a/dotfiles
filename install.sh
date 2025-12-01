@@ -6,15 +6,15 @@ sudo dnf copr enable alternateved/eza -y
 sudo dnf copr enable dejan/lazygit -y
 sudo dnf copr enable atim/starship -y 
 sudo dnf install -y \
-    zsh \
-    neovim \
-    git \
-    eza \
-    fastfetch \
-	lazygit \
-	starship \
-	code \
-	tmux \
+		zsh \
+		neovim \
+		git \
+		eza \
+		fastfetch \
+		lazygit \
+		starship \
+		code \
+		tmux \
 
 # Check if Zsh is the default shell
 if [[ "$SHELL" != "/bin/zsh" ]]; then
