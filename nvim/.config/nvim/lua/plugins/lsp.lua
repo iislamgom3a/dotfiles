@@ -30,7 +30,14 @@ return {
     'hrsh7th/cmp-nvim-lsp',
   },
   config = function()
-    vim.api.nvim_create_autocmd('LspAttach', {
+      vim.diagnostic.config({
+        virtual_text = true, -- Shows the error message inline
+        signs = true,        -- Shows icons in the gutter
+        underline = true,    -- Underlines the error
+        update_in_insert = false,
+        severity_sort = true,
+      })
+      vim.api.nvim_create_autocmd('LspAttach', {
       group = vim.api.nvim_create_augroup('lsp-attach', { clear = true }),
       -- Create a function that lets us more easily define mappings specific LSP related items.
       -- It sets the mode, buffer and description for us each time.
