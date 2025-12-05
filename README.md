@@ -15,7 +15,7 @@ cd ~/dotfiles
 3. change script persmission
 
 ```sh
-chmox +x ./install.sh
+chmod +x ./install.sh
 ```
 
 4. run the script
