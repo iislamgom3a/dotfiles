@@ -19,7 +19,7 @@ alias vim='nvim'
 #--- system ---#
 alias sleep='systemctl suspend -i'
 alias shutdown='sudo shutdown now'
-
+alias cl='clear'
 #--- tmux  ---#
 alias tl='tmux ls'
 tns(){
