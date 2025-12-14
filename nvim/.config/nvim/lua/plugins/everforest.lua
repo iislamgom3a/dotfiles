@@ -8,7 +8,7 @@ function M.config()
 	local everforest = require("everforest")
 	everforest.setup({
 		background = "hard",
-		transparent_background_level = 1,
+		transparent_background_level = 0,
 		italics = true,
 		disable_italic_comments = false,
 		inlay_hints_background = "dimmed",
