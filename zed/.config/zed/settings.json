@@ -1,0 +1,29 @@
+{
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false,
+  },
+  "vim_mode": true,
+  "icon_theme": {
+    "mode": "dark",
+    "light": "Zed (Default)",
+    "dark": "Material Icon Theme",
+  },
+  "ui_font_size": 17,
+  "buffer_font_size": 17,
+  "agent_buffer_font_size": 16,
+  "agent_ui_font_size": 17,
+
+  "theme": {
+    "mode": "dark",
+    "light": "Github Light",
+    "dark": "Github Dark",
+  },
+  "show_completion_documentation": true,
+  "diagnostics": {
+    "inline": {
+      "enabled": true,
+    },
+  },
+  "disable_ai": true,
+}
