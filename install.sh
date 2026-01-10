@@ -72,6 +72,14 @@ main() {
     print_warning "Starship is already installed"
   fi
 
+  if ! command_exists "zed"; then
+    print_status "Installing zed..."
+    curl -f https://zed.dev/install.sh | sh
+    print_success "zed installed successfully"
+  else
+    print_warning "zed is already installed"
+  fi
+
   # Change default shell to zsh
   if [[ "$SHELL" != *"zsh"* ]]; then
     print_status "Changing default shell to zsh..."
