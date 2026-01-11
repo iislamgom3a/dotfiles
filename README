@@ -14,5 +14,5 @@ cd ~/dotfiles
 3. Make the installation executable 
 chmod +x install.sh
 
-4. Excute it 
+4. Execute it 
 ./install.sh
