@@ -11,6 +11,8 @@ alias gc='git commit -m'
 alias gp='git push'
 alias gl='git pull'
 
+alias ldo='lazydocker'
+
 #--- neovim  ---#
 alias e='nvim'
 alias v='nvim'
