@@ -10,6 +10,11 @@ alias ga='git add'
 alias gc='git commit -m'
 alias gp='git push'
 alias gl='git pull'
+gsync (){
+  git add .
+  git commit -m "sync" 
+  git push
+}
 
 alias ldo='lazydocker'
 

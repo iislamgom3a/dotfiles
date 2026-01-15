@@ -129,12 +129,12 @@ main() {
 
   # Apply configurations using stow
   print_status "Applying dotfiles configurations..."
-  config_dirs=("lazygit" "nvim" "starship" "tmux" "zsh" "zed")
+  config_dirs=("lazygit" "nvim" "starship" "tmux" "zsh" "zed", "gh")
 
   for config in "${config_dirs[@]}"; do
     if [ -d "$config" ]; then
       print_status "Stowing $config configuration..."
-      stow -R -v"$config"
+      stow "$config"
       print_success "$config configuration applied"
     else
       print_warning "Configuration directory '$config' not found, skipping..."
