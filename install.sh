@@ -57,7 +57,7 @@ main() {
 
   # Install core packages
   print_status "Installing core development packages..."
-  packages=("zsh" "neovim" "git" "eza" "fastfetch" "lazygit" "tmux" "stow")
+  packages=("zsh" "neovim" "git" "eza" "fastfetch" "lazygit" "tmux" "stow" "btop")
 
   for package in "${packages[@]}"; do
     install_package "$package"

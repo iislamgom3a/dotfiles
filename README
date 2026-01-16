@@ -1,18 +1,10 @@
-Fedora Development Environment Setup
+> Fedora Development Environment Setup
+> Tested on Fedora Linux 43 (Workstation Edition).
+> A nerd Font is needed
 
-This repository contains a setup script and configuration files for a development environment on Fedora Linux.
-Tested on Fedora Linux 43 (Workstation Edition).
+> Installation
 
-Installation
-
-1. Clone the repository
 git clone https://github.com/iislamgom3a/dotfiles.git ~/dotfiles
-
-2. Enter the directory
 cd ~/dotfiles
-
-3. Make the installation executable 
 chmod +x install.sh
-
-4. Execute it 
 ./install.sh
