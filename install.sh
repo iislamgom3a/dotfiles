@@ -57,7 +57,7 @@ main() {
 
   # Install core packages
   print_status "Installing core development packages..."
-  packages=("zsh" "neovim" "git" "eza" "fastfetch" "lazygit" "tmux" "stow" "btop")
+  packages=("zsh" "neovim" "git" "eza" "fastfetch" "lazygit" "tmux" "stow" "btop", "gh")
 
   for package in "${packages[@]}"; do
     install_package "$package"
@@ -129,7 +129,7 @@ main() {
 
   # Apply configurations using stow
   print_status "Applying dotfiles configurations..."
-  config_dirs=("lazygit" "nvim" "starship" "tmux" "zsh" "zed", "gh")
+  config_dirs=("lazygit" "nvim" "starship" "tmux" "zsh" "zed")
 
   for config in "${config_dirs[@]}"; do
     if [ -d "$config" ]; then
