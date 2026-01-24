@@ -13,3 +13,4 @@ vim.o.scrolloff = 15
 vim.o.colorcolumn = "100"
 vim.o.signcolumn = "yes"
 vim.autoindent = true
+vim.o.guicursor = ""
