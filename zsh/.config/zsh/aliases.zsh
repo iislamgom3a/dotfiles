@@ -1,6 +1,6 @@
 #--- eza ---#
 alias ls='eza --icons'
-alias ll='eza -al --icons'
+alias ll='eza -alh --icons'
 alias lt='eza -T --level 2 --icons'
 
 # --- git  ---#
@@ -45,3 +45,7 @@ tas(){
 alias cab='source ~/anaconda3/bin/activate base'
 alias jl='jupyter-lab'
 alias jn='jupyter-notebook'
+
+
+alias cd='z'
+alias cdi='zi'
