@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -e # Exit on any error
+set -euo pipefail
 
 # Colors for output
 RED='\033[0;31m'
@@ -54,11 +54,25 @@ main() {
   print_status "Enabling COPR repositories..."
   sudo dnf copr enable alternateved/eza -y
   sudo dnf copr enable dejan/lazygit -y
-  sudo dnf copr enable scottames/ghostty
+  sudo dnf copr enable scottames/ghostty -y
 
   # Install core packages
   print_status "Installing core development packages..."
-  packages=("zsh" "neovim" "git" "eza" "fastfetch" "lazygit" "tmux" "stow" "btop" "gh" "fzf" "ghostty" "zoxide")
+  packages=(
+    "neovim"
+    "zed"
+    "zsh"
+    "eza"
+    "fastfetch"
+    "lazygit"
+    "tmux"
+    "stow"
+    "btop"
+    "gh"
+    "fzf"
+    "ghostty"
+    "zoxide"
+  )
 
   for package in "${packages[@]}"; do
     install_package "$package"
@@ -67,18 +81,10 @@ main() {
   # Install Starship prompt
   if ! command_exists "starship"; then
     print_status "Installing Starship prompt..."
-    curl -sS https://starship.rs/install.sh | sh
+    curl -sS https://starship.rs/install.sh | sh -s -- -y
     print_success "Starship prompt installed"
   else
     print_warning "Starship is already installed"
-  fi
-
-  if ! command_exists "zed"; then
-    print_status "Installing zed..."
-    curl -f https://zed.dev/install.sh | sh
-    print_success "zed installed successfully"
-  else
-    print_warning "zed is already installed"
   fi
 
   # Change default shell to zsh
@@ -130,7 +136,7 @@ main() {
 
   # Apply configurations using stow
   print_status "Applying dotfiles configurations..."
-  config_dirs=("lazygit" "nvim" "starship" "tmux" "zsh" "zed" "ghos")
+  config_dirs=("lazygit" "nvim" "starship" "tmux" "zsh" "zed" "ghostty")
 
   for config in "${config_dirs[@]}"; do
     if [ -d "$config" ]; then
