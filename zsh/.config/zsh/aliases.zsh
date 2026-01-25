@@ -17,6 +17,7 @@ gsync (){
 }
 
 alias ldo='lazydocker'
+alias ff='fastfetch'
 
 #--- neovim  ---#
 alias e='nvim'

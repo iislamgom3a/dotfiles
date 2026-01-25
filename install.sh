@@ -54,10 +54,11 @@ main() {
   print_status "Enabling COPR repositories..."
   sudo dnf copr enable alternateved/eza -y
   sudo dnf copr enable dejan/lazygit -y
+  sudo dnf copr enable scottames/ghostty
 
   # Install core packages
   print_status "Installing core development packages..."
-  packages=("zsh" "neovim" "git" "eza" "fastfetch" "lazygit" "tmux" "stow" "btop", "gh", "fzf")
+  packages=("zsh" "neovim" "git" "eza" "fastfetch" "lazygit" "tmux" "stow" "btop" "gh" "fzf" "ghostty")
 
   for package in "${packages[@]}"; do
     install_package "$package"
@@ -129,7 +130,7 @@ main() {
 
   # Apply configurations using stow
   print_status "Applying dotfiles configurations..."
-  config_dirs=("lazygit" "nvim" "starship" "tmux" "zsh" "zed")
+  config_dirs=("lazygit" "nvim" "starship" "tmux" "zsh" "zed" "ghostty")
 
   for config in "${config_dirs[@]}"; do
     if [ -d "$config" ]; then

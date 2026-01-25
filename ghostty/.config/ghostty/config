@@ -1,0 +1,11 @@
+font-family = JetBrainsMono Nerd Font
+font-size = 14
+theme = GitHub Dark
+window-theme= ghostty
+auto-update = check
+background-opacity = 0.90
+background-opacity-cells = true
+background-blur = true
+gtk-titlebar-hide-when-maximized =true
+
+

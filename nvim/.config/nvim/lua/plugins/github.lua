@@ -4,6 +4,10 @@ return {
 	lazy = false,
 	priority = 1000,
 	config = function()
-		require("github-theme").setup({})
+		require("github-theme").setup({
+			options = {
+				transparent = true, -- Disable setting bg (make neovim's background transparent)
+			},
+		})
 	end,
 }
