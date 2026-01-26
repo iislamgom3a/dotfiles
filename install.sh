@@ -72,6 +72,7 @@ main() {
     "fzf"
     "ghostty"
     "zoxide"
+    "dust"
   )
 
   for package in "${packages[@]}"; do

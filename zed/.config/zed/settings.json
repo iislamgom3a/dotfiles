@@ -28,8 +28,8 @@
 
   "theme": {
     "mode": "dark",
-    "light": "Github Light",
-    "dark": "Github Dark",
+    "light": "GitHub Light",
+    "dark": "GitHub Dark",
   },
   "show_completion_documentation": true,
   "diagnostics": {
