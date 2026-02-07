@@ -17,7 +17,7 @@ return {
 	opts = {
 		search = {
 			anaconda_base = {
-				command = "fd /python$ /home/iislamgom3a/anaconda3/bin/ --full-path --color never -E /proc",
+				command = "fd /python$ ~/anaconda3/bin/ --full-path --color never -E /proc",
 				type = "anaconda",
 			},
 		},

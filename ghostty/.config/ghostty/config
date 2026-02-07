@@ -1,6 +1,6 @@
 font-family = JetBrainsMono Nerd Font
-font-size = 14
-theme = GitHub Dark
+font-size = 18
+theme = Adventure
 window-theme= ghostty
 auto-update = check
 gtk-titlebar-hide-when-maximized =true
