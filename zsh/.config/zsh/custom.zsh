@@ -21,3 +21,11 @@ source ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting/zsh-sy
 
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
+
+export EDITOR="nvim"
+export VISUAL="nvim"
+
+# editor buffer
+autoload -Uz edit-command-line
+zle -N edit-command-line
+bindkey '^xe' edit-command-line

@@ -49,3 +49,4 @@ alias jn='jupyter-notebook'
 
 alias cd='z'
 alias cdi='zi'
+alias cmt='cmatrix'
