@@ -1,7 +1,14 @@
 #--- eza ---#
 alias ls='eza --icons'
 alias ll='eza -al --icons'
-alias lt='eza -T --level 2 --icons'
+
+lt(){
+  if [ $# -eq 0 ]; then 
+    eza -T --level 2 --icons
+  else
+    eza -T --level $1 --icons
+  fi 
+}
 
 # --- git  ---#
 alias lg='lazygit'

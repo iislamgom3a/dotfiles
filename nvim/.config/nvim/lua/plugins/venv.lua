@@ -12,7 +12,7 @@ return {
 	-- Load when opening Python files
 	ft = "python",
 	keys = {
-		{ ",v", "<cmd>VenvSelect<>" },
+		{ "<leader>z", "<cmd>VenvSelect<CR>" },
 	},
 	opts = {
 		search = {
