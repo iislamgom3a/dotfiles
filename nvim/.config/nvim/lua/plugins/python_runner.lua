@@ -1,4 +1,5 @@
 -- lua/plugins/python-run.lua
+--
 vim.keymap.set("n", "<leader>rp", function()
 	local file = vim.fn.expand("%:p")
 
@@ -27,3 +28,5 @@ vim.keymap.set("n", "<leader>rp", function()
 
 	vim.fn.termopen({ "python3", file })
 end, { desc = "Run current Python file (float)" })
+
+return {}
