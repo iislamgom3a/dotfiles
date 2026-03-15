@@ -12,4 +12,3 @@ vim.o.colorcolumn = "100"
 vim.o.signcolumn = "yes"
 vim.autoindent = true
 vim.o.winborder = "rounded"
-vim.g.snacks_animate = false
