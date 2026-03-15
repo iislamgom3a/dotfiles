@@ -1,3 +1,6 @@
+vim.g.mapleader = " "
+vim.g.maplocalleader = " "
 vim.keymap.set("n", "<Tab>", ":bnext<CR>") -- use Tab to go to next buffer
-vim.keymap.set("n", "<C-a>", "gg<S-v>G") -- select all (ctrl + a)
-vim.keymap.set("n", "<leader>e", ":Explore<CR>") -- default file Explore
+vim.keymap.set("n", "<Esc>", ":noh<CR>", opts) -- disable search highlight using esc
+vim.keymap.set("n", "x", '"_x', opts)
+vim.keymap.set("n", "<leader>lw", "<cmd>set wrap!<CR>", opts) -- Toggle line wrapping
