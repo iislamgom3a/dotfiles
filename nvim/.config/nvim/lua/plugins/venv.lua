@@ -17,7 +17,9 @@ return {
 	opts = {
 		search = {
 			anaconda_base = {
-				command = "fd /python$ ~/anaconda3/bin/ --full-path --color never -E /proc",
+				-- fdfind -> ubuntu
+				-- for fedora fd only (check other it's binary name for your other distors)
+				command = "fdfind /python3$ ~/anaconda3/bin/ --full-path --color never -E /proc",
 				type = "anaconda",
 			},
 		},
