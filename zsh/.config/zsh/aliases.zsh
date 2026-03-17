@@ -57,3 +57,23 @@ alias jn='jupyter-notebook'
 alias cd='z'
 alias cdi='zi'
 alias cmt='cmatrix'
+
+# competitive programming
+contest(){
+  local dir_name=$1
+  local no_of_files=$2
+  local letters=(a b c d e f g h i j k l m n o p q r s t u v w x y z)
+  mkdir "$dir_name"
+  for i in $(seq 1 $(($no_of_files))); do
+    touch "$dir_name/${letters[$i]}.cpp"
+  done
+}
+
+cpp(){
+  local file=$1
+  local name="${file%.*}"
+  g++ -o "$name" "$file" -O2 -std=c++17 -Wall -Wextra
+  ./"$name" < in.txt
+
+}
+
