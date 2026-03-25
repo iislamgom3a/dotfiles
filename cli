@@ -1,0 +1,23 @@
+[apt]
+curl
+git
+zsh
+starship
+tmux
+gh
+btop
+lazygit
+fastfetch
+fd-find
+fzf
+zoxide
+stow
+wl-clipboard
+
+[check website]
+nvim>=0.11
+ohmyzsh
+zsh extestions (syntx-highlighting, autosuggestions)
+tmux-tpm
+ghostty
+lazydocker
