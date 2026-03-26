@@ -14,16 +14,22 @@ lt(){
 alias lg='lazygit'
 alias gs='git status'
 alias ga='git add'
-alias gc='git commit -m'
+
+gc (){
+  git commit -m "$1"
+}
+
 alias gp='git push'
 alias gl='git pull'
+alias gd='git diff'
+
 gsync (){
   git add .
   git commit -m "sync" 
   git push
 }
 
-alias ldo='lazydocker'
+alias d='lazydocker'
 alias ff='fastfetch'
 
 #--- neovim  ---#
