@@ -3,4 +3,3 @@ font-size = 13
 theme = Adventure
 window-theme= ghostty
 auto-update = check
-gtk-titlebar-hide-when-maximized =true

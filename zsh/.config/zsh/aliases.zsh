@@ -38,6 +38,7 @@ alias cl='clear'
 alias open='xdg-open'
 alias ..='cd ..'
 
+alias t='tmux attach || tmux new -s Work'
 #--- tmux  ---#
 alias tl='tmux ls'
 tns(){
@@ -77,3 +78,16 @@ cpp(){
 
 }
 
+# trash
+
+trash() {
+  local args=()
+  for arg in "$@"; do
+    [[ "$arg" == -* ]] && continue
+    args+=("$arg")
+  done
+  [[ ${#args[@]} -gt 0 ]] && mv --verbose --backup=numbered --target-directory ~/.Trash/ "${args[@]}"
+}
+alias rm=trash
+
+alias emptytrash='/bin/rm -rf ~/.Trash/*'
