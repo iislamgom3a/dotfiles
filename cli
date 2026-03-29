@@ -13,6 +13,7 @@ fzf
 zoxide
 stow
 wl-clipboard
+cloc
 
 [check website]
 nvim>=0.11
