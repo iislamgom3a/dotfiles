@@ -1,6 +1,6 @@
 font-family = 0xProto Nerd Font
 font-size = 13
-theme = Adventure
+theme = GitHub Dark
 window-theme= ghostty
 gtk-titlebar = false
 window-padding-y = 10
@@ -12,3 +12,7 @@ cursor-style-blink = false
 shell-integration-features = no-cursor
 auto-update = check
 mouse-scroll-multiplier = 0.97
+
+
+
+
