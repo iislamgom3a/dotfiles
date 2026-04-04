@@ -1,0 +1,23 @@
+{
+  "icon_theme": "Material Icon Theme",
+  "ui_font_size": 16,
+  "buffer_font_size": 15,
+  "vim_mode": true,
+  "format_on_save": "off",
+  "disable_ai": true,
+  "theme": {
+    "mode": "dark",
+    "light": "One Light",
+    "dark": "GitHub Dark",
+  },
+  "auto_install_extensions": {
+    "material-icon-theme": true,
+    "html": true,
+    "dockerfile": true,
+    "sql": true,
+    "docker-compose": true,
+    "lua": true,
+    "toml": true,
+    "git-firefly": true,
+  },
+}

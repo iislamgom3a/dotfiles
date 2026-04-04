@@ -78,17 +78,17 @@ cpp(){
 
 }
 
-#--- trash ---#
-trash() {
-  local args=()
-  for arg in "$@"; do
-    [[ "$arg" == -* ]] && continue
-    args+=("$arg")
-  done
-  [[ ${#args[@]} -gt 0 ]] && mv --verbose --backup=numbered --target-directory ~/.Trash/ "${args[@]}"
-}
-alias rm=trash
-alias emptytrash='/bin/rm -rf ~/.Trash/*'
+# #--- trash ---#
+# trash() {
+#   local args=()
+#   for arg in "$@"; do
+#     [[ "$arg" == -* ]] && continue
+#     args+=("$arg")
+#   done
+#   [[ ${#args[@]} -gt 0 ]] && mv --verbose --backup=numbered --target-directory ~/.Trash/ "${args[@]}"
+# }
+# alias rm=trash
+# alias emptytrash='/bin/rm -rf ~/.Trash/*'
 
 #--- Others ---#
 alias cd='z'
