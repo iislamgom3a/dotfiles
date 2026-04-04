@@ -29,8 +29,6 @@ gsync (){
   git push
 }
 
-alias d='lazydocker'
-alias ff='fastfetch'
 
 #--- neovim  ---#
 alias e='nvim'
@@ -61,11 +59,7 @@ alias jl='jupyter-lab'
 alias jn='jupyter-notebook'
 
 
-alias cd='z'
-alias cdi='zi'
-alias cmt='cmatrix'
-
-# competitive programming
+#---  competitive programming ---#
 contest(){
   local dir_name=$1
   local no_of_files=$2
@@ -84,8 +78,7 @@ cpp(){
 
 }
 
-# trash
-
+#--- trash ---#
 trash() {
   local args=()
   for arg in "$@"; do
@@ -95,5 +88,13 @@ trash() {
   [[ ${#args[@]} -gt 0 ]] && mv --verbose --backup=numbered --target-directory ~/.Trash/ "${args[@]}"
 }
 alias rm=trash
-
 alias emptytrash='/bin/rm -rf ~/.Trash/*'
+
+#--- Others ---#
+alias cd='z'
+alias cdi='zi'
+alias cmt='cmatrix'
+alias d='lazydocker'
+alias ff='fastfetch'
+alias cat='batcat'
+alias wt='curl wttr.in'

@@ -14,6 +14,7 @@ zoxide
 stow
 wl-clipboard
 cloc
+bat
 
 [check website]
 nvim>=0.11
