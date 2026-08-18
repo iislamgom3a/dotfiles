@@ -1,0 +1,27 @@
+-- Plugin configuration for venv-selector.nvim
+return {
+	"linux-cultist/venv-selector.nvim",
+	dependencies = {
+		"neovim/nvim-lspconfig",
+		{
+			"nvim-telescope/telescope.nvim",
+			branch = "0.1.x",
+			dependencies = { "nvim-lua/plenary.nvim" },
+		},
+	},
+	-- Load when opening Python files
+	ft = "python",
+	keys = {
+		{ "<leader>z", "<cmd>VenvSelect<CR>" },
+	},
+	opts = {
+		search = {
+			anaconda_base = {
+				-- fdfind -> ubuntu
+				-- for fedora fd only (check other it's binary name for your other distors)
+				command = "fdfind /python3$ ~/anaconda3/bin/ --full-path --color never -E /proc",
+				type = "anaconda",
+			},
+		},
+	},
+}

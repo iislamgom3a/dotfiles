@@ -1,0 +1,99 @@
+{
+  "cli_default_open_behavior": "existing_window",
+  "diff_view_style": "split",
+  "git_panel": {
+    "tree_view": false,
+    "dock": "left"
+  },
+  "tabs": {
+    "file_icons": true,
+  },
+  "title_bar": {
+    "show_menus": false,
+    "show_branch_status_icon": true
+  },
+  "status_bar": {
+    "show_active_file": false
+  },
+  "search": {
+    "center_on_match": true,
+    "case_sensitive": false
+  },
+  "languages": {
+    "Python": {
+      "completions": {
+        "words_min_length": 3
+      },
+      "format_on_save": "on",
+      "preferred_line_length": 90
+    },
+    "Dockerfile": {
+      "format_on_save": "on"
+    },
+    "JSON": {
+      "format_on_save": "on",
+      "auto_indent": "preserve_indent",
+      "auto_indent_on_paste": true
+    },
+    "YAML": {
+      "format_on_save": "on"
+    }
+  },
+  "prettier": {
+    "allowed": false
+  },
+  "lsp_document_colors": "border",
+  "code_lens": "off",
+  "inlay_hints": {
+    "show_background": false,
+    "enabled": false
+  },
+  "diagnostics": {
+    "inline": {
+      "enabled": true,
+      "max_severity": null,
+    }
+  },
+  "show_whitespaces": "selection",
+  "vim": {
+    "toggle_relative_line_numbers": false
+  },
+  "toolbar": {
+    "agent_review": true,
+    "quick_actions": true,
+    "breadcrumbs": true
+  },
+  "relative_line_numbers": "enabled",
+  "hover_popover_delay": 200,
+  "scroll_beyond_last_line": "one_page",
+  "session": {
+    "trust_all_worktrees": true
+  },
+  "project_panel": {
+    "hide_gitignore": false,
+    "button": true,
+    "dock": "left"
+  },
+  "icon_theme": "Material Icon Theme",
+  "ui_font_size": 16,
+  "buffer_font_size": 16,
+  "vim_mode": true,
+  "format_on_save": "off",
+  "disable_ai": true,
+  "theme": {
+    "mode": "dark",
+    "light": "One Light",
+    "dark": "GitHub Dark",
+  },
+  "auto_install_extensions": {
+    "github-theme": true,
+    "material-icon-theme": true,
+    "html": true,
+    "dockerfile": true,
+    "sql": true,
+    "docker-compose": true,
+    "lua": true,
+    "toml": true,
+    "git-firefly": true,
+  },
+}
