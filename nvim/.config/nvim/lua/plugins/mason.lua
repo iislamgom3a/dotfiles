@@ -7,7 +7,7 @@ return {
 
 			"bash-language-server",
 			"gh-actions-language-server",
-			"yaml-lanaguage-server",
+			"yaml-language-server",
 			"docker-compose-language-service",
 			"docker-language-server",
 			"dockerfile-language-server",

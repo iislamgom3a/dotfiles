@@ -14,3 +14,5 @@ sudo apt install -y curl git zsh tmux gh btop eza fastfetch fd-find fzf zoxide s
 - `lazydocker` [link](https://github.com/jesseduffield/lazydocker#installation) 
 - `lazygit` [link](https://github.com/jesseduffield/lazygit#debian-and-ubuntu) 
 - `starship` [link](https://starship.rs/)
+- yazi [docs](https://yazi-rs.github.io/docs/installation) 
+
