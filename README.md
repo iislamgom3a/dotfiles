@@ -1,4 +1,6 @@
 ## Installation
+| For `Ubuntu 24.04 LTS`, `Mint 22.3`
+
 ### apt
 
 ```sh
@@ -8,14 +10,15 @@ sudo apt install -y curl git zsh tmux gh btop eza fastfetch fd-find fzf zoxide s
 - `nvim`>=0.11 [link](https://neovim.io/doc/install/)
 - `ohmyzsh` [link](https://ohmyz.sh/#install) 
 - `zsh` extestions:
-  - `syntx-highlighting` [github](https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md) 
-  - `autosuggestions` [github](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#oh-my-zsh) 
-- `tmux-tpm` [github](https://github.com/tmux-plugins/tpm) 
-- `ghostty` [docs](https://ghostty.org/docs/install/binary#ubuntu) 
-- `lazydocker` [link](https://github.com/jesseduffield/lazydocker#installation) 
-- `lazygit` [link](https://github.com/jesseduffield/lazygit#debian-and-ubuntu) 
-- `starship` [link](https://starship.rs/)
+  - `syntx-highlighting` [GitHub](https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md) 
+  - `autosuggestions` [GitHub](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#oh-my-zsh) 
+- `tmux-tpm` [GitHub](https://github.com/tmux-plugins/tpm) 
+- `ghostty` [Docs](https://ghostty.org/docs/install/binary#ubuntu) 
+- `lazydocker` [GitHub](https://github.com/jesseduffield/lazydocker#installation) 
+- `lazygit` [GitHub](https://github.com/jesseduffield/lazygit#debian-and-ubuntu) 
+- `starship` [website](https://starship.rs/)
 - `yazi` [docs](https://yazi-rs.github.io/docs/installation) 
-- `tldr` [build from source](https://github.com/tldr-pages/tldr)
+- `tldr` [GitHub](https://github.com/tldr-pages/tldr)
+  - Build from source using `cargo`
 
 ---
