@@ -71,10 +71,10 @@ cpp(){
 #--- Others ---#
 alias cd='z'
 alias cdi='zi'
-alias cmt='cmatrix'
 alias d='lazydocker'
 alias ff='fastfetch'
 alias cat='batcat'
+alias c='opencode'
 alias win11='docker compose -f $HOME/work/docker-files/win_11.yml up'
 alias y='yazi'
 alias szsh='source ~/.zshrc'
