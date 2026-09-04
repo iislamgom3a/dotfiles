@@ -9,7 +9,7 @@ sudo apt install -y curl git zsh tmux gh btop eza fastfetch fd-find fzf zoxide s
 ### check website
 - `nvim`>=0.11 [link](https://neovim.io/doc/install/)
 - `ohmyzsh` [link](https://ohmyz.sh/#install) 
-- `zsh` extestions:
+- `zsh` extensions:
   - `syntx-highlighting` [GitHub](https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md) 
   - `autosuggestions` [GitHub](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#oh-my-zsh) 
 - `tmux-tpm` [GitHub](https://github.com/tmux-plugins/tpm) 
