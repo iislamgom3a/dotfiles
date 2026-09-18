@@ -20,5 +20,6 @@ sudo apt install -y curl git zsh tmux gh btop eza fastfetch fd-find fzf zoxide s
 - `yazi` [docs](https://yazi-rs.github.io/docs/installation) 
 - `tldr` [GitHub](https://github.com/tldr-pages/tldr)
   - Build from source using `cargo`
+- `carapace` [website](https://carapace-sh.github.io/carapace-bin/install.html) 
 
 ---

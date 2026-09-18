@@ -1,5 +1,6 @@
 #--- eza ---#
 alias ls='eza --icons'
+alias la='eza -a --icons'
 alias ll='eza -al --icons'
 
 lt(){
@@ -40,7 +41,7 @@ alias open='xdg-open'
 alias ..='cd ..'
 
 #--- tmux  ---#
-alias t='tmux attach || tmux new -s Work'
+alias t='tmux attach || tmux new -s work'
 
 
 #--- ML ---#
@@ -69,7 +70,10 @@ cpp(){
 }
 
 #--- Others ---#
-alias cd='z'
+# alias cd='z'
+cd(){
+  z "$@"
+}
 alias cdi='zi'
 alias d='lazydocker'
 alias ff='fastfetch'
@@ -78,3 +82,4 @@ alias c='opencode'
 alias win11='docker compose -f $HOME/work/docker-files/win_11.yml up'
 alias y='yazi'
 alias szsh='source ~/.zshrc'
+
