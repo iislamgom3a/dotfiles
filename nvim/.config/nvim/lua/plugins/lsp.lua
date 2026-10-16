@@ -13,6 +13,13 @@ return {
 						},
 					},
 				},
+				pyright = {
+					settings = {
+						pyright = {
+							disableOrganizeImports = true,
+						},
+					},
+				},
 			},
 		},
 	},

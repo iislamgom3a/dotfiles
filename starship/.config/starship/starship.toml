@@ -13,9 +13,9 @@ $character"""
 add_newline = true
 
 [directory]
-style = 'bold fg:dark_blue'
+style = 'bold fg:blue'
 format = '[$path ]($style)'
-truncation_length = 3
+truncation_length = 2
 truncation_symbol = '…/'
 truncate_to_repo = false
 
@@ -43,10 +43,6 @@ symbol = ' '
 format = ' [${symbol}${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
 pyenv_version_name = true
 pyenv_prefix = ''
-
-[lua]
-format = '[$symbol($version )]($style)'
-symbol = ' '
 
 [package]
 symbol = '󰏗 '

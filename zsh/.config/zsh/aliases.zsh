@@ -82,4 +82,5 @@ alias c='opencode'
 alias win11='docker compose -f $HOME/work/docker-files/win_11.yml up'
 alias y='yazi'
 alias szsh='source ~/.zshrc'
-
+alias fopen='nvim $(fzf --preview='cat {}')'
+alias b='btop'

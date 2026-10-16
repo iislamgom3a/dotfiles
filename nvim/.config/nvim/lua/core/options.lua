@@ -13,3 +13,11 @@ vim.o.signcolumn = "yes"
 vim.autoindent = true
 vim.o.winborder = "rounded"
 vim.o.cursorline = false
+
+vim.api.nvim_create_autocmd("FileType", {
+	pattern = "markdown",
+	callback = function()
+		vim.opt_local.conceallevel = 0
+		vim.opt_local.concealcursor = ""
+	end,
+})
