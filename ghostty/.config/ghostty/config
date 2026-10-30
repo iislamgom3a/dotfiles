@@ -1,4 +1,4 @@
-font-family = JetBrainsMono NF
+font-family=JetBrainsMonoNL NFP
 font-size = 13
 theme = GitHub Dark
 window-theme= ghostty
@@ -12,4 +12,8 @@ window-padding-x = 10
 cursor-style= block
 cursor-style-blink = false
 shell-integration-features = no-cursor
-auto-update = check
+auto-update = download 
+auto-update-channel = stable 
+desktop-notifications = true
+
+
