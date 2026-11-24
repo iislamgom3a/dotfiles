@@ -1,5 +1,10 @@
 return {
 	"nvim-neo-tree/neo-tree.nvim",
+	opts = {
+		window = {
+			width = 32,
+		},
+	},
 	-- keys = {
 	-- 	{
 	-- 		"<leader>fe",

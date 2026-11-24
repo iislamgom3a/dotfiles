@@ -1,5 +1,5 @@
 ## Installation
-| For `Ubuntu 26.04 LTS`+,
+| For `Ubuntu 26.04 LTS`+
 
 ### apt
 

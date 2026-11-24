@@ -32,8 +32,8 @@ require("lazy").setup({
 			"LazyVim/LazyVim",
 			import = "lazyvim.plugins",
 			opts = {
-				-- colorscheme = "onedark_dark",
-				colorscheme = "github_dark_default",
+				colorscheme = "onedark_dark",
+				-- colorscheme = "github_dark_default",
 			},
 		},
 		{ import = "plugins" },
@@ -59,3 +59,8 @@ require("lazy").setup({
 		},
 	},
 })
+
+-- LazyVim enables format-on-save (sets vim.g.autoformat = true) during lazy.setup,
+-- so this has to run afterwards to disable it by default.
+-- Filetypes that should still format on save enable vim.b.autoformat locally.
+vim.g.autoformat = false

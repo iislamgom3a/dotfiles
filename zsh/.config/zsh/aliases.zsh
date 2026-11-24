@@ -18,7 +18,6 @@ alias ga='git add'
 alias gg='git log --oneline --graph --decorate --all'
 
 
-alias cab='source ~/anaconda3/bin/activate base'
 alias gl='git log'
 alias gll='git log --oneline'
 alias gd='git diff'
@@ -38,14 +37,13 @@ alias v='nvim'
 alias sleep='systemctl suspend -i'
 alias shutdown='sudo shutdown now'
 alias open='xdg-open'
-alias ..='cd ..'
 
 #--- tmux  ---#
 alias t='tmux attach || tmux new -s work'
 
 
 #--- ML ---#
-# alias cab='source ~/anaconda3/bin/activate base'
+alias cab='source ~/anaconda3/bin/activate base'
 alias jl='jupyter-lab'
 alias jn='jupyter-notebook'
 
@@ -75,6 +73,8 @@ cd(){
   z "$@"
 }
 alias cdi='zi'
+alias ..='cd ..'
+alias ...='cd ../..'
 alias d='lazydocker'
 alias ff='fastfetch'
 alias cat='batcat'
@@ -83,5 +83,21 @@ alias cm='opencode mini'
 alias win11='docker compose -f $HOME/work/docker-files/win_11.yml up'
 alias y='yazi'
 alias szsh='source ~/.zshrc'
-alias fopen='nvim $(fzf --preview='cat {}')'
+# open a file picked with fzf in nvim
+fopen() {
+  local file
+  file=$(fzf --walker-skip=.git,node_modules,.venv,venv,__pycache__ \
+                --preview='batcat --color=always --style=numbers --line-range=:200 {}') || return
+  [[ -n $file ]] && nvim "$file"
+}
 alias b='btop'
+alias x='exit'
+alias cl='clear' 
+
+
+klayout-sky130() {
+    cd ~/gp/sky130_klayout_pdk || return
+    source ~/sky130-env/bin/activate
+    KLAYOUT_PATH=. klayout -e
+}
+
