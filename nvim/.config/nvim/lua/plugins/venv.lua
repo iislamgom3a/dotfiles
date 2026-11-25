@@ -9,7 +9,6 @@ return {
 			dependencies = { "nvim-lua/plenary.nvim" },
 		},
 	},
-	-- Load when opening Python files
 	ft = "python",
 	keys = {
 		{ "<leader>z", "<cmd>VenvSelect<CR>" },
